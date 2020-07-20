@@ -1,0 +1,65 @@
+
+Employer
+    - id
+    - name
+    - city
+    - state
+    - country
+    - description
+    - industry
+
+Skills
+    - id
+    - name :
+    - catergory 
+
+Opening
+    - id
+    - emp_id
+    - title
+    - description
+    - city
+    - state
+    - country
+
+
+Engagement
+
+
+Applicant
+    - candidate_id
+    - position_id
+    - status 
+
+Candidate
+ - firstname
+ - middlename
+ - lastname
+ - city
+ - state
+
+CandidateEducation
+    - id
+    - cid (references candidate id)
+    - institution 
+    - type :  [ (University / College ) | Other ]
+    - start : MM / YYYY
+    - end : MM / YYYY
+
+CandidateEmplomentHisotry
+    - id
+    - cid (references candidate id)
+    - company_id
+    - employement_type : [FULLTIME, PARTTIME, SELF-EMPLOYED, CONTRACT, INTERNSHIP, APPRENCTICESHIP, FREELANCE]
+    - city
+    - state
+    - country
+    - start : MM / YYYY
+    - enddate : MM / YYYY
+    - description (responsibilities)
+
+CandidateSkills
+    - skill_id
+    - candidate_id
+
+
